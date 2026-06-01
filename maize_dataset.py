@@ -45,8 +45,6 @@ if __name__ == '__main__':
             row_dict = row._asdict()
             marker_values = {k:v for k,v in row_dict.items() if re.match('m.*',k)}
             zygosity = {marker_coverage(k):v for k,v in marker_values.items()}
-
-
-    def
+            zygosity
 
     readNAMPHT()
