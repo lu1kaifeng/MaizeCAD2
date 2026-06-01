@@ -27,9 +27,10 @@ if __name__ == '__main__':
 
     def marker_coverage(name_marker):
         prev_marker = int(name_marker[1:]) - 1
-        frm = 0
+        frm = 1
         if not prev_marker == 0:
-            frm  = int(marker_map['m'+str(prev_marker)]['agp_pos'])
+            if  marker_map['m'+str(prev_marker)]['chr'] ==marker_map[name_marker]['chr']:
+                frm  = int(marker_map['m'+str(prev_marker)]['agp_pos'])
         to = int(marker_map[name_marker]['agp_pos'])
         return marker_map[name_marker]['chr'],frm,to
 
