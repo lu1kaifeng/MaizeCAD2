@@ -4,8 +4,9 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/Bian" />
       <excludeFolder url="file://$MODULE_DIR$/ref" />
+      <excludeFolder url="file://$MODULE_DIR$/vcf" />
     </content>
-    <orderEntry type="jdk" jdkName="py13" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="py310" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
