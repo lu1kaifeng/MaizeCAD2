@@ -1,3 +1,5 @@
+import re
+
 import pyreadr
 from pyfaidx import Fasta
 
@@ -41,8 +43,10 @@ if __name__ == '__main__':
         robj = read_robj(fp)
         for row in robj.itertuples(index=False):
             row_dict = row._asdict()
-            for k, v in row_dict.items():
-                pass
+            marker_values = {k:v for k,v in row_dict.items() if re.match('m.*',k)}
+            zygosity = {marker_coverage(k):v for k,v in marker_values.items()}
 
+
+    def
 
     readNAMPHT()
